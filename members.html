@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Members</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: #fff;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      margin-bottom: 3rem;
+      font-size: 2.5rem;
+      font-weight: 600;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .members {
+      width: 100%;
+      max-width: 1000px;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .member {
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      padding: 1rem;
+      transition: transform 0.4s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: fadeInUp 0.8s ease forwards;
+      opacity: 0;
+    }
+
+    .member:nth-child(1) { animation-delay: 0.2s; }
+    .member:nth-child(2) { animation-delay: 0.4s; }
+    .member:nth-child(3) { animation-delay: 0.6s; }
+    .member:nth-child(4) { animation-delay: 0.8s; }
+
+    .member:hover {
+      transform: scale(1.02);
+    }
+
+    .member img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 16px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .member:hover img {
+      transform: scale(1.05);
+    }
+
+    .member-info {
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    .member-name {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .member-class {
+      font-size: 1rem;
+      color: #e0e0e0;
+      margin-top: 0.2rem;
+    }
+
+    .linkedin {
+      margin-top: 0.6rem;
+    }
+
+    .linkedin a {
+      color: black;
+      font-size: 1.7rem;
+      text-decoration: none;
+      transition: opacity 0.3s;
+    }
+
+    .linkedin a:hover {
+      opacity: 0.7;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .member img {
+        max-width: 90vw;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Our Members</h1>
+
+  <div class="members">
+    <div class="member">
+      <img src="saheem.png" alt="Saheem" />
+      <div class="member-info">
+        <div class="member-name">Saheem</div>
+        <div class="member-class">Co TY</div>
+        <div class="member-class">Gauri Patane mam</div>
+        <div class="linkedin">
+          <a href="https://www.linkedin.com/in/saheem-nakhwa-311234329/" target="_blank" class="links">LinkedIn</a><br>
+          <a href="https://github.com/saheemnoob/" target="_blank" class="links">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="member">
+      <img src="vedant.png" alt="Vedant" />
+      <div class="member-info">
+        <div class="member-name">Vedant</div>
+        <div class="member-class">Co TY</div>
+        <div class="member-class">Gauri Patane mam</div>
+        <div class="linkedin">
+          <a href="https://www.linkedin.com/in/vedant-surve-79811634b/overlay/about-this-profile/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="member">
+      <img src="shwet.png" alt="Shwet" />
+      <div class="member-info">
+        <div class="member-name">Shwet</div>
+        <div class="member-class">Co TY</div>
+        <div class="member-class">Gauri Patane mam</div>
+        <div class="linkedin">
+          <a href="#" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="member">
+      <img src="viraj.png" alt="Viraj" />
+      <div class="member-info">
+        <div class="member-name">Viraj</div>
+        <div class="member-class">Co TY</div>
+        <div class="member-class">Gauri Patane mam</div>
+        <div class="linkedin">
+          <a href="https://www.linkedin.com/in/viraj-shinde-212aa9354/" target="_blank">LinkedIn</a><br>
+          <a href="https://www.instagram.com/wolfer_codes?igsh=am14dTY4MWlvMm4y" target="_blank">Insta</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
