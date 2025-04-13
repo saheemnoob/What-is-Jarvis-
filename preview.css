@@ -14,11 +14,13 @@ body {
     height: 100vh;
     flex-direction: column;
     padding: 1rem;
+    text-align: center;
 }
 
 .container {
-    text-align: center;
     animation: fadeIn 2s ease-in-out;
+    max-width: 90%;
+    width: 100%;
 }
 
 h1 {
@@ -26,25 +28,28 @@ h1 {
     margin-bottom: 1rem;
 }
 
-video {
+iframe {
     width: 100%;
     max-width: 600px;
+    height: 337px; /* Maintains 16:9 ratio for 600px width */
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transition: transform 0.5s ease;
 }
 
-video:hover {
+iframe:hover {
     transform: scale(1.03);
 }
 
 p {
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     max-width: 600px;
     line-height: 1.6;
+    margin-inline: auto;
 }
 
+/* Animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -57,12 +62,43 @@ p {
     }
 }
 
-@media (max-width: 768px) {
+/* Responsive Styling */
+@media (max-width: 1024px) {
     h1 {
         font-size: 2rem;
     }
 
     p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    iframe {
+        height: 250px; /* Slightly smaller for tablets */
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
         font-size: 1rem;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    iframe {
+        height: 200px; /* Maintain readability on phones */
+    }
+
+    p {
+        font-size: 0.95rem;
+        padding: 0 0.5rem;
     }
 }
