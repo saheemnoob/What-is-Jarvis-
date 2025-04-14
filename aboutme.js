@@ -1,5 +1,5 @@
 const bannerImg = document.getElementById("banner");
-const imgArr = ["b1.png", "b2.png", "b4.png", "b3.png","b5.png"];
+const imgArr = ["b2.png", "b1.png", "b4.png", "b3.png","b5.png"];
 let index = 0;
 
 function startBannerSlider() {
